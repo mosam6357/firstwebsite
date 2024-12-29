@@ -1,0 +1,37 @@
+body{margin:0px;}
+    a {
+        color:royalblue;
+        text-decoration: none;
+    }
+    h1 {
+        font-size:40px;
+        border-bottom:2px solid black;
+        padding:15px;
+        margin:0px;
+        text-align:center;
+    }
+    ol {
+        border-right:2px solid black;
+        width:70px;
+        margin:0px;
+        padding:20px;
+    }
+    #grid{
+        display:grid;
+        grid-template-columns: 200px 1fr;
+    }
+    #grid ol{
+        padding-left:35px;
+        font-size:20px;
+    }
+    @media(max-width:700px){
+        h1,ol{
+            border:none;
+        }
+        h2,p{
+            padding-left:30px;
+        }
+        #grid{
+            display:block;
+        }
+    }
